@@ -62,7 +62,7 @@ export function Create(){
                     <li><input placeholder="Opção 4" className="mb-8 border-b-2 bg-rose-50 border-rose-900 text-rose-900 h-10 focus:outline-none placeholder-rose-900 placeholder-opacity-25 focus:border-rose-700" onChange={(e)=> setOptFour(e.target.value)}/></li>
                     <li><input placeholder="Opção 5" className="border-b-2 bg-rose-50 border-rose-900 text-rose-900 h-10 focus:outline-none placeholder-rose-900 placeholder-opacity-25 focus:border-rose-700" onChange={(e)=> setOptFive(e.target.value)}/></li>
             </ul>} 
-           <button onClick={handleSubmit} disabled={!title || !optOne || !optTwo || (selected == 3) && !optThree || (selected == 4) && !optFour || (selected == 5) && !optFive} className="mt-10 w-72 bg-rose-50 border-2 border-rose-900 rounded-xl h-12 font-bold text-xl enabled:hover:bg-rose-900 enabled:hover:text-rose-50 focus:bg-rose-800 focus:text-rose-50 disabled:opacity-25"><h1>CRIAR</h1></button>
+           <button onClick={handleSubmit} disabled={!title || !optOne || !optTwo || (selected == 3) && !optThree || (selected == 4) && !optFour || (selected == 5) && !optFive} className="mt-10 w-72 bg-rose-50 border-2 border-rose-900 rounded-xl h-12 font-bold text-xl enabled:hover:bg-rose-900 enabled:hover:text-rose-50 enabled:focus:bg-rose-800 enabled:focus:text-rose-50 disabled:opacity-25"><h1>CRIAR</h1></button>
         </form>
       </div>
     )

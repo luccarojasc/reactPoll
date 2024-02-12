@@ -1,4 +1,5 @@
 import { Create } from "./sections/create";
+import { Select } from "./sections/select";
 
 
 
@@ -11,7 +12,7 @@ export function App() {
         <Create />
       </div>
       <div className="min-w-96 shadow-inner shadow-stone-300">
-        <h1>Teste2</h1>
+        <Select />
       </div>
       <div className="w-full shadow-md shadow-stone-300 mx-auto">
         <h1>Teste3</h1>
