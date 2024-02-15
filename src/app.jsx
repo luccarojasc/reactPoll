@@ -1,7 +1,6 @@
-import { Create } from "./sections/create";
-import { Select } from "./sections/select";
-import { Show } from "./sections/show";
-
+import { Create } from "./sections/create"
+import { Select } from "./sections/select"
+import { Show } from "./sections/show"
 
 
 export function App() {
@@ -16,7 +15,7 @@ export function App() {
         <Select />
       </div>
       <div className="w-full shadow-md shadow-stone-300 mx-auto">
-        <Show />
+      <Show />
       </div>
     </div>
   )
