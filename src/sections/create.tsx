@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 
 export function Create(){
@@ -10,6 +10,7 @@ export function Create(){
     const [optThree, setOptThree] = useState('');
     const [optFour, setOptFour] = useState('');
     const [optFive, setOptFive] = useState('');
+
 
     const handleSubmit = async () => {
       console.log(title, optOne, optTwo, optThree, optFour, optFive);
