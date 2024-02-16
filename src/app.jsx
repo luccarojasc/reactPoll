@@ -7,7 +7,7 @@ export function App() {
 
 
   return(
-    <div className="mx-auto max-w-screen-2xl h-screen flex overflow-hidden">
+    <div className="mx-auto max-w-screen-2xl shadow-md h-screen flex overflow-hidden">
       <div className="min-w-96 shadow-md shadow-stone-300">
         <Create />
       </div>
