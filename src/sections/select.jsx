@@ -7,8 +7,8 @@ const api = axios.create({
 
 export function Select() {
     const url = '/polls';
-
     const [enquetes, setEnquetes] = useState([]);
+    const [pollId, setPollId] = useState('');
 
     useEffect(() => {
         api.get(url).then((response) => {
@@ -26,7 +26,7 @@ export function Select() {
                         <li key={enquete.id} className="flex justify-center">
                             <div className="border-b-2 border-rose-800 w-11/12 h-32 mt-3 mb-3">
                                 <h1 className="font-bold flex justify-center text-xl text-rose-800">{enquete.title}</h1>
-                                <button className="pb-7 ml-4 h-6 w-72 mt-8 bg-rose-900 text-rose-50 rounded-xl font-bold text-lg hover:bg-rose-700">SELECIONAR</button>
+                                <button className="pb-7 ml-4 h-6 w-72 mt-8 bg-rose-900 text-rose-50 rounded-xl font-bold text-lg hover:bg-rose-700" onClick={() => setPollId(enquete.id)}>SELECIONAR</button>
                             </div>
                         </li>
                     ))}
@@ -34,4 +34,16 @@ export function Select() {
             </div>
         </div>
     )
+}
+
+export function Selected(pollId) {
+    const url = `/polls/${pollId}`
+    const [selectedpoll, setSelectedPoll] = useState([])
+    
+    useEffect(() => {
+        api.get(url).then((response) => {
+            setSelectedPoll(response.data.poll)
+            console.log(response.data.poll)
+        })
+    }, [])
 }
